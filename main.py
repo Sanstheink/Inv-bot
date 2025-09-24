@@ -227,4 +227,4 @@ class DocumentDropdown(Select):
         elif self.doc_type == "receipt":
             cur.execute("SELECT * FROM receipts WHERE id=%s", (doc_id,))
             rec = cur.fetchone()
-            pdf_buffer = generate_pdf_receipt(rec[1], rec[2], rec[3],
+            pdf_buffer = generate_pdf_receipt(rec[1], rec[2], rec[3],)
